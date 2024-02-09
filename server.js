@@ -30,13 +30,13 @@ app.use(express.json());
 // Static directory serves files
 app.use(express.static("public"));
 
-const hbs = exphbs.create({});
+const hbs = exphbs.create({ helpers: require("./utils/helpers") });
 app.engine("handlebars", hbs.engine);
 app.set("view engine", "handlebars");
 
 app.use("/", allRoutes);
 
-sequelize.sync({ force: true }).then(function () {
+sequelize.sync({ force: false }).then(function () {
   app.listen(PORT, function () {
     console.log("App listening on PORT " + PORT);
   });
