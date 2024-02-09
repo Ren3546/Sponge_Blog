@@ -22,20 +22,20 @@ const userData = [
 
 const postData = [
     {
-        title: `Spongebob first post`,
+        title: `first post`,
         content: `Hello everyone`,
         userid: 1,
     },{
-        title: `How do I use this`,
-        content: `Rock`,
+        title: `post`,
+        content: `hi!`,
         userid: 2,
     },{
-        title: `Money`,
-        content: `Give me money`,
+        title: `my post`,
+        content: `hello`,
         userid: 3,
     },{
-        title: `Music`,
-        content: `Listen to my music`,
+        title: `this post`,
+        content: `no`,
         userid: 4,
     }
 ]
