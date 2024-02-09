@@ -1,0 +1,26 @@
+<main>
+  <h1>Edit Post</h1>
+  <form>
+    <div>
+      <label for="title" class="form-label">Title</label>
+      <input
+        type="text"
+        class="form-control"
+        id="title"
+        placeholder="Enter post title"
+        value="{{title}}"
+      />
+    </div>
+    <div>
+      <label for="content" class="form-label">Content</label>
+      <textarea
+        class="form-control"
+        id="content"
+        rows="3"
+        placeholder="Enter post content"
+      >{{content}}</textarea>
+    </div>
+    <button type="submit" id="update">Edit</button>
+    <button type="button" id="delete">Delete</button>
+  </form>
+</main>

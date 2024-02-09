@@ -1,0 +1,25 @@
+<main>
+  <span>
+    <h1>{{title}}</h1>
+    <p>Created by: {{username}} Date: {{format_date createdAt}}</p>
+    <p>{{content}}</p>
+  </span>
+  {{#if logged_in}}
+    <form id="commentForm">
+      <div>
+        <textarea
+          rows="3"
+          id="content"
+          placeholder="Add comment..."
+        ></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  {{/if}}
+ {{#each comments}}
+    <div>
+      <p>{{content}}</p>
+      <p>By {{username}} on {{format_date createdAt}}</p>
+    </div>
+  {{/each}}
+</main>
