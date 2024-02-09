@@ -1,0 +1,42 @@
+/* style.css */
+.postForm {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .postForm div {
+    margin-bottom: 10px;
+  }
+  
+  .postForm label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .postForm input[type="text"],
+  .postForm textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+  }
+  
+  .postForm textarea {
+    resize: vertical;
+  }
+  
+  .postForm button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .postForm button:hover {
+    background-color: #0056b3;
+  }
+  
