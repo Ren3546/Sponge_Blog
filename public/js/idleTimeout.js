@@ -2,7 +2,7 @@ let timeoutId;
 
 function resetTimer() {
   clearTimeout(timeoutId);
-  timeoutId = setTimeout(logout, 300000); // 5 minutes in milliseconds
+  timeoutId = setTimeout(logout, 30000); // 5 minutes in milliseconds
 }
 
 function logout() {
