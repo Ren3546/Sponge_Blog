@@ -1,0 +1,17 @@
+<main>
+  <div>
+    <div>
+      <h1>Dashboard</h1>
+      <a href="/createPost">Create a New Post</a>
+    </div>
+  </div>
+  <br>
+  <h1>Your Posts:</h1>
+  {{#each posts}}
+    <div>
+      <h2><a href="/api/post/{{id}}">{{title}}</a></h2>
+      <p>By: {{user.username}} Date: {{format_date createdAt}}</p>
+      <a href="/editPost/{{id}}">Edit Post</a>
+    </div>
+  {{/each}}
+</main>
